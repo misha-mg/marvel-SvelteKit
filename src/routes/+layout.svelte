@@ -14,6 +14,9 @@
 <slot />
 
 <style>
+  a {
+    color: #000;
+  }
   .app__header {
     display: flex;
     justify-content: space-between;
