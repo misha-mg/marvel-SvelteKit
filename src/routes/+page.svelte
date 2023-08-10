@@ -5,16 +5,26 @@
   import { takeOneChar, takeAllChars } from "../app/utils";
 
   let id = Math.floor(Math.random() * (1011400 - 1011000) + 1011000);
-  let offset = 210;
+  let idFromList;
+  let limit = 9;
+
+  function getCharId(newId) {
+    idFromList = newId;
+    promiseOne = takeOneChar(newId);
+  }
+  function LoadMore() {
+    limit += 9;
+    takeAllChars(limit);
+  }
 
   let promiseOne = takeOneChar(id);
-  let promiseAll = takeAllChars(offset);
+  let promiseAll = takeAllChars(limit);
 </script>
 
 <RandomChar />
 
 <div class="char__block">
-  <CharList {promiseAll} />
+  <CharList {promiseAll} {getCharId} {LoadMore} />
   <CharInfo {promiseOne} />
 </div>
 

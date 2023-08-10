@@ -9,8 +9,8 @@
     Do you want to get to know him better?
   </p>
   <p class="randomchar__subtitle">Or choose another one</p>
-  <button class="button button__main">
-    <div class="inner" on:click={updateChar}>try it</div>
+  <button class="button button__main" on:click={updateChar}>
+    <div class="inner">try it</div>
   </button>
   <img src={mjolnir} alt="mjolnir" class="randomchar__decoration" />
 </div>
