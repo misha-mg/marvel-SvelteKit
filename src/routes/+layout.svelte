@@ -1,12 +1,28 @@
+<script>
+  let comics = false;
+</script>
+
 <nav class="app__header">
   <h1 class="app__title">
     <a href="/"><span>Marvel</span> information portal</a>
   </h1>
   <div class="app__menu">
     <ul>
-      <li><a href="/">Characters</a></li>
+      <li>
+        <a
+          class:activeStyle={!comics}
+          href="/"
+          on:click={() => (comics = !comics)}>Characters</a
+        >
+      </li>
       /
-      <li><a href="/comics">Comics</a></li>
+      <li>
+        <a
+          class:activeStyle={comics}
+          href="/comics"
+          on:click={() => (comics = !comics)}>Comics</a
+        >
+      </li>
     </ul>
   </div>
 </nav>
@@ -26,7 +42,8 @@
     font-size: 28px;
     line-height: 37px;
   }
-  span {
+  span,
+  .activeStyle {
     color: #9f0013;
   }
   .app__menu ul {
