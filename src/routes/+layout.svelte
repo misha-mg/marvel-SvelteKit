@@ -4,7 +4,7 @@
   </h1>
   <div class="app__menu">
     <ul>
-      <li><a href="/characters">Characters</a></li>
+      <li><a href="/">Characters</a></li>
       /
       <li><a href="/comics">Comics</a></li>
     </ul>

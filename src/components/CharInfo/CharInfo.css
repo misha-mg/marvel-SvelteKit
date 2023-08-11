@@ -6,6 +6,8 @@
     background-color: #fff;
     width: 425px;
     max-height: 700px;
+    position: sticky;
+    top: 25px;
   }
   .char__info-name {
     font-weight: bold;

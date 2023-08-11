@@ -12,6 +12,19 @@ export async function takeAllChars(limit = 9) {
     const url = `${_apiBase}characters?limit=${limit}&offset=210&apikey=e43f19f4472459ad11df2d6d89eaef55`;
     let response = await fetch(url);
     const data = await response.json();
-    // console.log(data.data.results);
     return data.data.results;
 }
+
+export const takeAllComics = async (offset = 210) => {
+  const url = `https://gateway.marvel.com:443/v1/public/comics?limit=8&offset=${offset}&apikey=e43f19f4472459ad11df2d6d89eaef55`
+  let response = await fetch(url);
+  const data = await response.json();
+  return data.data.results;
+};
+
+export const getOneComic = async (id) => {
+  const url = `https://gateway.marvel.com:443/v1/public/comics/${id}?apikey=e43f19f4472459ad11df2d6d89eaef55`;
+  let response = await fetch(url);
+  const data = await response.json();
+  return data.data.results;
+};

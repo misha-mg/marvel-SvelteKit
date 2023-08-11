@@ -12,19 +12,14 @@
     idFromList = newId;
     promiseOne = takeOneChar(newId);
   }
-  function LoadMore() {
-    limit += 9;
-    takeAllChars(limit);
-  }
 
   let promiseOne = takeOneChar(id);
-  let promiseAll = takeAllChars(limit);
 </script>
 
 <RandomChar />
 
 <div class="char__block">
-  <CharList {promiseAll} {getCharId} {LoadMore} />
+  <CharList {getCharId} />
   <CharInfo {promiseOne} />
 </div>
 
