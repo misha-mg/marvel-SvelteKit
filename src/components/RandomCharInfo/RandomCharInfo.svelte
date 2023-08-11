@@ -35,3 +35,9 @@
     <img src={errorGif} alt="error gif" class="error-gif" />
   {/await}
 </div>
+
+<style>
+  .loading-gif {
+    height: 180px;
+  }
+</style>
