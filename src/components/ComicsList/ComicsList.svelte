@@ -49,7 +49,7 @@
     {/each}
   </ul>
   {#if loading}
-    <div class="loading-gif">
+    <div class="loading-gif-block">
       <img src={loadingGif} alt="loading gif" />
     </div>
   {/if}

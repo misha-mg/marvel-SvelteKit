@@ -61,10 +61,6 @@
 </div>
 
 <style>
-  .loading-gif img {
-    width: 200px;
-    height: 200px;
-  }
   .loading-gif {
     width: 100%;
     height: 200px;

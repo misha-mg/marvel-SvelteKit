@@ -37,7 +37,11 @@
 </div>
 
 <style>
+  .button a {
+    color: #fff;
+  }
   .loading-gif {
     height: 180px;
+    width: 180px;
   }
 </style>

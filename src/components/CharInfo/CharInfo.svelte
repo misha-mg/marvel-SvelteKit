@@ -59,4 +59,7 @@
   .button__secondary {
     margin: 15px 0px 0px 0px;
   }
+  .button a {
+    color: #fff;
+  }
 </style>

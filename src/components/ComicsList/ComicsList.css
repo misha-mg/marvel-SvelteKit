@@ -57,12 +57,12 @@
   .button:hover {
     transform: translateY(-5px);
   }
-  .loading-gif {
+  .loading-gif-block {
     width: 1100px;
     display: flex;
     justify-content: center;
   }
-  .loading-gif img {
+  .loading-gif-block img {
     height: 200px;
     width: 200px;
   }

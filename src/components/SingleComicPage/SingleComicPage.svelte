@@ -14,7 +14,7 @@
 
 <div class="single-comic">
   {#await promiseOne}
-    <div class="loading-gif">
+    <div class="loading-gif-block">
       <img src={loadingGif} alt="loading gif" />
     </div>
   {:then response}
@@ -43,12 +43,12 @@
 </div>
 
 <style>
-  .loading-gif {
+  .loading-gif-block {
     width: 1100px;
     display: flex;
     justify-content: center;
   }
-  .loading-gif img {
+  .loading-gif-block img {
     height: 200px;
     width: 200px;
   }
