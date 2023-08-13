@@ -44,9 +44,9 @@
 
 <style>
   .loading-gif-block {
-    width: 1100px;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
   }
   .loading-gif-block img {
     height: 200px;

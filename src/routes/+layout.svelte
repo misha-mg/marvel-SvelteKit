@@ -9,18 +9,16 @@
   <div class="app__menu">
     <ul>
       <li>
-        <a
-          class:activeStyle={!comics}
-          href="/"
-          on:click={() => (comics = !comics)}>Characters</a
+        <a class:activeStyle={comics} href="/" on:click={() => (comics = true)}
+          >Characters</a
         >
       </li>
       /
       <li>
         <a
-          class:activeStyle={comics}
+          class:activeStyle={!comics}
           href="/comics"
-          on:click={() => (comics = !comics)}>Comics</a
+          on:click={() => (comics = false)}>Comics</a
         >
       </li>
     </ul>
