@@ -6,7 +6,7 @@
   import { takeAllChars } from "../../app/utils";
 
   export let getCharId;
-  let limit = 9;
+  let limit = 6;
   let charList = [];
   let loading = true;
 
@@ -24,7 +24,7 @@
   }
 
   function LoadMore() {
-    limit += 9;
+    limit += 6;
     loading = true;
     promiseAll = takeAllChars(limit);
     newPromise();
