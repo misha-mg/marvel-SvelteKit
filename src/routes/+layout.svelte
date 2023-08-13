@@ -1,5 +1,5 @@
 <script>
-  let comics = false;
+  let comics = true;
 </script>
 
 <nav class="app__header">
