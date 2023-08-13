@@ -30,6 +30,10 @@
 <style>
   a {
     color: #000;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: #9f0013;
   }
   .app__header {
     display: flex;
