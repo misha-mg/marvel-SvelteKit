@@ -24,7 +24,7 @@
       class="single-comic__img"
     />
     <div class="single-comic__info">
-      <h2 class="single-comic__">{response[0].title}</h2>
+      <h2 class="single-comic__name">{response[0].title}</h2>
       <p class="single-comic__descr">
         {response[0].description
           ? response[0].pageCount

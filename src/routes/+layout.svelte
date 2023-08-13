@@ -58,4 +58,19 @@
   .app__menu li {
     margin: 0 8px;
   }
+  @media screen and (max-width: 730px) {
+    .app__header {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+    .app__title {
+      margin-bottom: 25px;
+      font-size: 25px;
+    }
+    .app__menu a {
+      font-size: 20px;
+    }
+  }
 </style>

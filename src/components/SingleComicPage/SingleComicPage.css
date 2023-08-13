@@ -42,3 +42,32 @@
       grid-template-columns: 293px 255px auto;
     }
   }
+  @media screen and (max-width: 750px) {
+    .single-comic__img {
+      width: 195px;
+    height: 300px;
+    }
+    .single-comic {
+      grid-template-columns: 200px 200px;
+      column-gap: 20px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .single-comic__img {
+      width: 146.5px;
+      height: 225px;
+    }
+    .single-comic {
+      grid-template-columns: 145px 180px;
+      column-gap: 20px;
+    }
+    .single-comic__name {
+      font-size: 18px;
+    }
+    .single-comic__descr {
+      margin-top: 10px;
+    }
+    .single-comic__price {
+      margin-top: 15px;
+    }
+  }

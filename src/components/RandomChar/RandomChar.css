@@ -99,3 +99,32 @@ a {
       margin-bottom: 40px;
     }
   }
+
+
+  
+  @media screen and (max-width: 730px) {
+    .randomchar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+      margin-bottom: 40px;
+    }
+    .randomchar__block {
+      display: block;
+      text-align: center;
+      min-height: 420px;
+    }
+    .randomchar__decoration {
+      height: 150px;
+      bottom: 14px;
+      right: -37px;
+  }
+  }
+  @media screen and (max-width: 550px) {
+    .randomchar__decoration {
+      height: 100px;
+      bottom: 14px;
+      right: 10px;
+  }
+}

@@ -45,3 +45,13 @@
       grid-template-columns: repeat(1, 200px);
     }
   }
+  @media screen and (max-width: 730px) {
+    .char__grid {
+      grid-template-columns: repeat(2, 200px);
+    }
+  }
+  @media screen and (max-width: 470px) {
+    .char__grid {
+      grid-template-columns: repeat(2, 150px);
+    }
+  }

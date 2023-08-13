@@ -43,5 +43,6 @@
   .loading-gif {
     height: 180px;
     width: 180px;
+    margin: 0 auto;
   }
 </style>

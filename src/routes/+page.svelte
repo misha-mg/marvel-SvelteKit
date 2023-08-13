@@ -33,4 +33,11 @@
       justify-content: space-around;
     }
   }
+
+  @media screen and (max-width: 730px) {
+    .char__block {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 </style>

@@ -32,3 +32,19 @@
     text-transform: uppercase;
     color: #fff;
   }
+
+  @media screen and (max-width: 470px) {
+    .char__item {
+      width: 150px;
+      height: 300px;
+      /* padding: 10px; */
+    }
+    .char__item img {
+      width: 150px;
+      height: 150px;
+      /* transform: translate(-15px, -15px); */
+    }
+    .char__name {
+      font-size: 15px;
+    }
+  }

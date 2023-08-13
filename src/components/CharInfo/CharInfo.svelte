@@ -37,19 +37,21 @@
     <div class="char__descr">
       {response[0].description}
     </div>
-    <div class="char__comics">Comics:</div>
-    {#if response[0].comics.items.length === 0}
-      <p>There is no comics with this character</p>
-    {/if}
-    <ul class="char__comics-list">
-      {#each response[0].comics.items as comics, i}
-        {#if i <= 5}
-          <li class="char__comics-item">
-            {comics.name}
-          </li>
-        {/if}
-      {/each}
-    </ul>
+    <div class="char__comics">
+      <div class="char__comics">Comics:</div>
+      {#if response[0].comics.items.length === 0}
+        <p>There is no comics with this character</p>
+      {/if}
+      <ul class="char__comics-list">
+        {#each response[0].comics.items as comics, i}
+          {#if i <= 5}
+            <li class="char__comics-item">
+              {comics.name}
+            </li>
+          {/if}
+        {/each}
+      </ul>
+    </div>
   {:catch error}
     <img src={errorGif} alt="error gif" class="error-gif" />
   {/await}

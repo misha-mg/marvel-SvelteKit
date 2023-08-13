@@ -8,6 +8,7 @@
     max-height: 700px;
     position: sticky;
     top: 25px;
+    margin-bottom: 20px;
   }
   .char__info-name {
     font-weight: bold;
@@ -96,4 +97,28 @@
   .loading-gif img {
     height: 200px;
     width: 200px;
+  }
+
+  
+  @media screen and (max-width: 730px) {
+    .char__info {
+      order: -1;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    .char__info {
+      padding: 15px;
+      width: 350px;
+      max-height: 700px;
+      position: sticky;
+      top: 0px;
+      margin-bottom: 20px;  
+    }
+    .char__comics{
+      display: none;
+    }
+    .char__info-name {
+      font-size: 18px;
+    }
   }
