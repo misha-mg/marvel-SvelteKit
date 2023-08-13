@@ -33,3 +33,14 @@
   .button:hover {
     transform: translateY(-5px);
   }
+
+  @media screen and (max-width: 1150px) {
+    .char__grid {
+      grid-template-columns: repeat(2, 200px);
+    }
+  }
+  @media screen and (max-width: 940px) {
+    .char__grid {
+      grid-template-columns: repeat(1, 200px);
+    }
+  }
