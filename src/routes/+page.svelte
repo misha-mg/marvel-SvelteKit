@@ -4,7 +4,7 @@
   import CharInfo from "../components/CharInfo/CharInfo.svelte";
   import { takeOneChar, takeAllChars } from "../app/utils";
 
-  let id = Math.floor(Math.random() * (1011400 - 1011000) + 1011000);
+  let id = Math.floor(Math.random() * 400 + 1011000);
   let idFromList;
   let limit = 9;
 

@@ -4,10 +4,10 @@
   import RandomCharStatic from "../RandomCharStatic/RandomCharStatic.svelte";
   import { takeOneChar } from "../../app/utils";
 
-  let id = Math.floor(Math.random() * (1011400 - 1011000) + 1011000);
+  let id = Math.floor(Math.random() * 400 + 1011000);
   let promise = takeOneChar(id);
   function updateChar() {
-    id = Math.floor(Math.random() * (1011400 - 1011000) + 1011000);
+    id = Math.floor(Math.random() * 400 + 1011000);
     promise = takeOneChar(id);
   }
 </script>
